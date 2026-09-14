@@ -30,3 +30,47 @@ void quicksort(vector<int>& a, int low, int high) {
         quicksort(a, vitri + 1, high);
     }
 }
+
+// Ham tim cap so co tong bang target
+void timcap(vector<int>& a, int target) {
+    quicksort(a, 0 , (int)a.size() - 1);
+    int low = 0;
+    int i = 0;
+    int high = (int)a.size() - 1;
+    while (low < high) {
+        int sum = a[low] + a[high];
+        if (sum == target) {
+            cout << "Pair found (" << a[low] << ", " << a[high] << ")" << endl;
+            low ++;
+            high --;
+            i ++;
+        }
+        else if(sum < target) {
+            low ++;
+        }
+        else {
+            high --;
+        }
+    }
+    if (i == 0) {
+        cout << "No pair found" << endl;
+    }
+}
+
+// Ham main
+int main() {
+    vector<int> a;
+    int n;
+    cin >> n;
+    for (int i = 0; i < n; i++) {
+        int x; 
+        cin >> x;
+        a.push_back(x);
+    }
+    int target;
+    cin >> target;
+    timcap(a, target);
+    return 0;
+}
+
+
