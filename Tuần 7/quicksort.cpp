@@ -16,10 +16,9 @@ void inMang(vector<int> &a) {
 }
 
 int phanhoach (vector<int> &a, int begin, int end) {
-    int pivot;
+    int i = begin; 
+    int j = end - 1;
     if(begin < end){
-        int i = begin; 
-        int j = end - 1;
         while(i <= j){
             while(i <= j && a[end] > a[i]) i++;
             while(i <= j && a[end] < a[j]) j--;
@@ -30,12 +29,11 @@ int phanhoach (vector<int> &a, int begin, int end) {
            }
         }
         swap(a[end], a[i]);
-        pivot = i;
-        if(pivot != end){
+        if(i != end){
             inMang(a);
         }
     }
-    return pivot;
+    return i;
 }
 
 void quicksort(vector<int> &a, int begin, int end){
@@ -47,4 +45,9 @@ void quicksort(vector<int> &a, int begin, int end){
         quicksort(a, begin, x-1);
         quicksort(a, x+1, end);
     }
+}
+
+int main(){
+    vector<int> a = {101, 23, 57, 13, 26, 121, 87, 36, 13, 204, 111, 89, 69};
+    quicksort(a, 0, a.size() - 1);
 }
