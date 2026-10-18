@@ -1,14 +1,21 @@
 #include<iostream>
+#include<vector>
  
 using namespace std;
 
-void swap (int &a, int &b){
+void inMang(vector<int> &a) {
+    for (int i = 0; i < a.size(); i++) {
+        cout << a[i] << " ";
+    }
+    cout << '\n';
+}
+    void swap (int &a, int &b){
     int temp = a;
     a = b;
     b = temp;
 }
 
-int phanhoach (int *a, int begin, int end) {
+int phanhoach (vector<int> &a, int begin, int end) {
     int pivot;
     if(begin < end){
         int i = begin; 
@@ -24,11 +31,14 @@ int phanhoach (int *a, int begin, int end) {
         }
         swap(a[end], a[i]);
         pivot = i;
+        if(pivot != end){
+            inMang(a);
+        }
     }
     return pivot;
 }
 
-void quicksort(int *a, int begin, int end){
+void quicksort(vector<int> &a, int begin, int end){
     if(begin >= end){
         return ;
     }
