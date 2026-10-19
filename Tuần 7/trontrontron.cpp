@@ -42,3 +42,8 @@ void tachtachtach(vector<int> &a, int begin, int end){
         trontrontron(a, begin, end, mid);
     }
 }
+
+int main(){
+    vector<int> a = {101, 23, 57, 13, 26, 121, 87, 36, 13, 204, 111, 89, 69};
+    tachtachtach(a, 0, a.size() - 1);
+}
