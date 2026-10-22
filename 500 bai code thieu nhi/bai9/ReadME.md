@@ -3,7 +3,7 @@ Biến low lưu giá trị index của số 1 đầu tiên.
 Biến mid là biến chạy duyệt các phần tử.
 Biến high lưu giá trị index của số 1 cuối cùng.
 Lặp vòng while với điều kiện dừng là mid sẽ lớn hơn high 
-- Khi a[mid] = 0 thì ta sẽ +1 cho biến low để cập nhật lại vị trí của số 1 đầu tiên, +1 cho biến mid để chuyển qua phần tử tiếp theo do phần tử hiện tại đã đúng vị trí.
+- Khi a[mid] = 0 thì ta sẽ swap phần tử vị trí low và mid, sau đó +1 cho biến low để cập nhật lại vị trí của số 1 đầu tiên, +1 cho biến mid để chuyển qua phần tử tiếp theo do phần tử hiện tại đã đúng vị trí.
 - Khi a[mid] = 1 thì ta sẽ +1 cho biến mid để chuyển sang phần tử tiếp theo do nó đã ở đúng vị trí của nó
 - Khi a[mid] = 2 thì ta sẽ swap phẩn tử ở vị trí mid với vị trí high để chuyển số 2 xuống cuối mảng, cập nhật lại vị trí của phần tử 1 cuối cùng bằng cách high trừ đi 1. Lúc này, ta vẫn tiếp tục xét phần tử mid trong vòng lặp tiếp theo (là phần tử high cũ).
 => Cứ tiếp tục như vậy ta sẽ thu được output của bài toán.
