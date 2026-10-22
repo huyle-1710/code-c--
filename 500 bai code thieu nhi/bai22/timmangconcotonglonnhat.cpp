@@ -13,7 +13,7 @@ void mangconmax(vector<int> a){
         int low = 0;
         int high = 0;
         int start = 0;
-        for(int i = 0; i < a.size(); i++){
+        for(int i = 1; i < a.size(); i++){
             if(tong < 0){
                 start = i;
                 tong = a[i];
