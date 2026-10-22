@@ -17,7 +17,7 @@ void tichdien(vector<int> a){
         r *= a[i];
     }
     for(int i = 0; i < n; i++){
-        cout << a[i] << " ";
+        cout << b[i] << " ";
     }
 }
 
