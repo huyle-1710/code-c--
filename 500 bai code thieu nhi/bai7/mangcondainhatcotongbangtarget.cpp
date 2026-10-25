@@ -22,7 +22,6 @@ int chiamang(int n, vector<int> a, int target){
         int count = 0;
         if(tong == target){
             inMang(a, 0, n-1);
-            return n;
         }
         else{
             count++;
@@ -31,14 +30,16 @@ int chiamang(int n, vector<int> a, int target){
             tong = tong - a[i] + a[n + i];
             if(tong == target){
                 inMang(a, i+1, n + i);
-                return n;
             }
             else{
                 count ++;
             }
         }
-        if(count != 0){
+        if(count == (a.size()-n+1)){
             return 0;
+        }
+        else{
+            return n;
         }
     }
 }
