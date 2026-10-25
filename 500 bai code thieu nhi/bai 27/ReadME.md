@@ -122,9 +122,3 @@ Mỗi hàng là một lần chạy độc lập. Nhập theo thứ tự `k`, `n`
 | 10 | Số 0 ở hai đầu | 1 | 4 | `0 1 1 0` | `Kích thước tối đa là: 3`<br>`Từ vị trí 0 đến 2` |
 | 11 | Nhiều đoạn cùng độ dài | 0 | 5 | `1 1 0 1 1` | `Kích thước tối đa là: 2`<br>`Từ vị trí 0 đến 1` |
 | 12 | k bằng 0, có nhiều số 0 | 0 | 6 | `0 1 1 0 1 0` | `Kích thước tối đa là: 2`<br>`Từ vị trí 1 đến 2` |
-
-## Độ phức tạp và kiểm tra
-
-- Code hiện tại thử các nhóm số 0 liên tiếp trong danh sách vị trí và tìm lại đoạn số 1 dài nhất, có thời gian `O(n²)` trong trường hợp xấu nhất.
-- Bộ nhớ phụ: `O(n)` cho các danh sách vị trí và bản sao mảng trong hàm tìm đoạn.
-- Bốn ví dụ và 12 testcase trên đã được chạy với `b27.cpp`. Độ dài được đối chiếu bằng cách xét tất cả các đoạn; vị trí trả về cũng được kiểm tra. Tất cả đều đúng.

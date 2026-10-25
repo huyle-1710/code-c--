@@ -74,10 +74,3 @@ Mỗi hàng là một lần chạy độc lập: nhập `n` ở dòng đầu, sa
 | 8 | Toàn số âm | 3 | `-1 -2 -3` | `6 3 2` |
 | 9 | Các phần tử giống nhau | 4 | `2 2 2 2` | `8 8 8 8` |
 | 10 | Số 0 ở đầu và có số âm | 3 | `0 -2 3` | `-6 0 0` |
-
-## Độ phức tạp và lưu ý
-
-- Thời gian: `O(n)` vì duyệt mảng một số lần cố định.
-- Mảng kết quả `b` dùng `O(n)` bộ nhớ. Hàm hiện tại nhận `vector<int> a` theo giá trị nên còn sao chép mảng đầu vào; có thể dùng `const vector<int>& a` để bỏ bản sao này.
-- Code hiện tại dùng `int` cho các tích. Các phép nhân trung gian và kết quả phải nằm trong giới hạn của `int`; có thể dùng `long long` cho `b`, `l`, `r` khi cần chứa tích lớn hơn.
-- Ba ví dụ và 10 testcase trên đã được chạy đối chiếu với `thayphantudangxetbangtichcacphantuconlai.cpp`, đều cho kết quả mong đợi.

@@ -117,10 +117,3 @@ Mỗi hàng là một lần chạy độc lập. Nhập theo thứ tự `target`
 | 11 | Toàn số âm | -6 | 4 | `-1 -2 -3 -4` | `-1 -2 -3`<br>`3` |
 | 12 | Số 0 kéo dài đoạn hợp lệ | 3 | 5 | `0 1 2 0 8` | `0 1 2 0`<br>`4` |
 | 13 | Nhiều đoạn dài nhất không chồng lấn | 3 | 5 | `1 2 10 2 1` | `1 2`<br>`2 1`<br>`2` |
-
-## Độ phức tạp và kiểm tra
-
-- Code hiện tại thử độ dài từ lớn xuống nhỏ và trượt cửa sổ với mỗi độ dài, có thời gian `O(n²)`.
-- Hàm `chiamang` nhận vector theo giá trị nên tạo bản sao mảng, dùng thêm `O(n)` bộ nhớ.
-- Các phép tính tổng hiện dùng `int`; dữ liệu cần bảo đảm các tổng trung gian không bị tràn số.
-- Bốn ví dụ và 13 testcase trên đã được chạy với `mangcondainhatcotongbangtarget.cpp` và đối chiếu với cách xét tất cả mảng con; tất cả đều đúng.

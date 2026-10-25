@@ -72,5 +72,3 @@ Mỗi hàng là một lần chạy độc lập: nhập `n` ở dòng đầu, sa
 | 8 | Ứng viên cuối không phải đa số | 3 | `1 2 3` | `Không có phần tử chiếm đa số!` |
 | 9 | Đa số chỉ hơn một nửa một phần tử | 6 | `2 1 2 1 2 2` | `Phần tử chiếm đa số là: 2` |
 | 10 | Phần tử đa số tập trung ở cuối | 7 | `1 2 3 9 9 9 9` | `Phần tử chiếm đa số là: 9` |
-
-Ba ví dụ và 10 testcase trên đã được chạy đối chiếu với `Find_majority_element.cpp`, đều cho kết quả mong đợi.

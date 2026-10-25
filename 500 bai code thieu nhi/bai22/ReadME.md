@@ -81,5 +81,3 @@ Mỗi hàng là một lần chạy độc lập: nhập `n`, sau đó nhập m�
 | 10 | Bỏ đoạn có tổng âm để bắt đầu lại | 4 | `2 -5 4 3` | `7` | `4 3` |
 | 11 | Nhiều đoạn cùng có tổng lớn nhất | 3 | `1 -1 1` | `1` | `1` |
 | 12 | Tổng tạm thời bằng 0 | 4 | `0 2 -2 2` | `2` | `0 2` |
-
-Ba ví dụ và 12 testcase trên đã được chạy đối chiếu với `timmangconcotonglonnhat.cpp`. Tổng lớn nhất được kiểm tra độc lập bằng cách xét tất cả các mảng con không rỗng; tất cả đều đúng.

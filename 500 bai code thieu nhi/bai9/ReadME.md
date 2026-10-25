@@ -74,4 +74,3 @@ Mỗi hàng là một lần chạy độc lập. Nhập `n` ở dòng đầu, sa
 | 11 | Các giá trị xen kẽ | 9 | `2 0 1 2 0 1 2 0 1` | `0 0 0 1 1 1 2 2 2` |
 | 12 | Cần kiểm tra lại phần tử đổi từ cuối về | 3 | `1 2 0` | `0 1 2` |
 
-Ba ví dụ và 12 testcase trên đã được chạy đối chiếu với `cohalan.cpp`, đều cho kết quả mong đợi.
